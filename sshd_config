@@ -1,0 +1,16 @@
+# Permetti l'autenticazione con password
+PasswordAuthentication yes
+PermitRootLogin yes  # Permette il login dell'utente root (opzionale)
+
+# Cambia la porta SSH se necessario
+Port 22
+
+ClientAliveInterval 60
+ClientAliveCountMax 3
+
+AllowTcpForwarding yes
+GatewayPorts yes
+
+PermitRootLogin yes
+
+X11Forwarding yes
