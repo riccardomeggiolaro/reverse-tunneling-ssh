@@ -5,12 +5,10 @@ PermitRootLogin yes  # Permette il login dell'utente root (opzionale)
 # Cambia la porta SSH se necessario
 Port 22
 
-ClientAliveInterval 60
-ClientAliveCountMax 3
+ClientAliveInterval 1
+ClientAliveCountMax 1
 
 AllowTcpForwarding yes
 GatewayPorts yes
 
-PermitRootLogin yes
-
-X11Forwarding yes
+X11Forwarding no
