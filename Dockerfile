@@ -2,7 +2,7 @@
 FROM debian:latest
 
 # Installa OpenSSH Server
-RUN apt-get update && apt-get install -y openssh-server
+RUN apt-get update && apt-get install -y openssh-server && apt-get install lsof && apt-get install nano
 
 # Crea una directory per il server SSH
 RUN mkdir /var/run/sshd
